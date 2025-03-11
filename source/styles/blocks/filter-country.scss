@@ -1,0 +1,71 @@
+@use "../bootstrap.scss" as *;
+
+.filter-country__list {
+  @include reset-list;
+  display: grid;
+  row-gap: 20px;
+}
+
+.filter-country__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.filter-country__input {
+  &:checked + .filter-country__mark {
+    background-color: var(--base-primary);
+    border-color: var(--base-primary);
+    justify-content: end;
+  }
+
+  &:hover + .filter-country__mark,
+  &:focus + .filter-country__mark {
+    background-color: var(--alt-primary-opacity-0_25);
+    border-color: var(--alt-primary-lighter);
+  }
+
+  &:disabled {
+    & + .filter-country__mark {
+      background-color: var(--alt-light-grey);
+      border-color: var(--alt-light-grey);
+      cursor: default;
+    }
+
+    & ~ .filter-country__label {
+      color: var(--base-grey);
+      cursor: default;
+    }
+
+    &:checked + .filter-country__mark::after {
+      background-color: var(--base-grey);
+    }
+  }
+}
+
+.filter-country__mark {
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  width: 42px;
+  height: 24px;
+  border-radius: 12px;
+  border: 2px solid var(--base-grey);
+  background-color: var(--base-grey);
+  cursor: pointer;
+
+  &::after {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--base-white);
+    content: "";
+  }
+}
+
+.filter-country__label {
+  font-size: 16px;
+  line-height: 150%;
+  cursor: pointer;
+}

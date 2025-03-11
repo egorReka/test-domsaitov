@@ -1,0 +1,37 @@
+/* GLOBAL */
+@import "./bootstrap.scss";
+@import "./global/global.scss";
+@import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/container.scss";
+
+/* BLOCKS */
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/custom-menu.scss";
+@import "./blocks/burger.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/slider-card.scss";
+@import "./blocks/slider-pagination.scss";
+@import "./blocks/features.scss";
+@import "./blocks/features-card.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/filter.scss";
+@import "./blocks/filter-price.scss";
+@import "./blocks/filter-milk.scss";
+@import "./blocks/filter-country.scss";
+@import "./blocks/filter-button.scss";
+@import "./blocks/sorting.scss";
+@import "./blocks/catalog-card.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/academy.scss";
+@import "./blocks/ui/title.scss";
+@import "./blocks/ui/text.scss";
+@import "./blocks/ui/button.scss";
+
+/* LIBS */
+@import "../vendor/nouislider/nouislider.scss";

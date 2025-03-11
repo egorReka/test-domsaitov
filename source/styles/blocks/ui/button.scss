@@ -1,0 +1,73 @@
+@use "../../bootstrap.scss" as *;
+
+.button {
+  @include reset-button;
+  border-radius: 4px;
+  padding: 8px 20px;
+  background-color: var(--base-primary);
+  color: var(--base-white);
+  font-family: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: var(--alt-primary-lighter);
+  }
+
+  &:active {
+    background-color: var(--alt-primary-darker);
+  }
+
+  &:disabled {
+    background-color: var(--base-grey);
+    cursor: default;
+  }
+
+  &--primary {
+    min-width: 141px;
+    font-size: 14px;
+    line-height: 143%;
+  }
+
+  &--secondary {
+    min-width: 137px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  &--slider {
+    min-width: 113px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  &--additional {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  &--reset {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--base-primary);
+    background-color: var(--base-white);
+
+    &:hover,
+    &:focus {
+      color: var(--base-white);
+    }
+
+    &:active {
+      color: var(--base-white);
+    }
+
+    &:disabled {
+      background-color: var(--alt-light-grey);
+      color: var(--base-white);
+      cursor: default;
+    }
+  }
+}

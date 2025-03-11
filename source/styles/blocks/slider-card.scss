@@ -1,0 +1,104 @@
+@use "../bootstrap.scss" as *;
+
+.slider-card {
+  display: grid;
+  justify-items: center;
+  row-gap: 10px;
+  padding: 20px 20px 60px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 20px;
+    padding: 60px 80px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 600px);
+    justify-content: center;
+    gap: 0 30px;
+    padding: 30px 80px 84px;
+  }
+}
+
+.slider-card__img-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+.slider-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 476px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
+}
+
+.slider-card__container {
+  display: grid;
+  justify-items: center;
+
+  @media (min-width: $desktop-width) {
+    justify-items: flex-start;
+    align-content: center;
+  }
+}
+
+.slider-card__label {
+  margin-bottom: 4px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -9px;
+    margin-bottom: 3px;
+    letter-spacing: -0.02em;
+  }
+}
+
+.slider-card__title {
+  margin: 0 0 10px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 16px;
+  }
+}
+
+.slider-card__text {
+  margin: 0 0 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 40px;
+  }
+}
+
+.slider-card__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.slider-card__list-price {
+  margin: 0;
+  min-width: 97px;
+}
+
+.slider-card__item-price {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+}
+
+.slider-card__button {
+  text-decoration: none;
+}

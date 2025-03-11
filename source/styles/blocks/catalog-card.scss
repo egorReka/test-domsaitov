@@ -1,0 +1,80 @@
+@use "../bootstrap.scss" as *;
+
+.catalog-card {
+  display: grid;
+  padding: 20px;
+  background-color: var(--base-white);
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--hover {
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &:hover,
+    &:focus-within {
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.catalog-card__link {
+  @include reset-link;
+  padding-top: 20px;
+  outline: none;
+}
+
+.catalog-card__img {
+  display: block;
+  width: 130px;
+  height: 188px;
+  margin: 0 auto 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 30px;
+  }
+}
+
+.catalog-card__title {
+  margin: 0 0 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 10px;
+  }
+}
+
+.catalog-card__text {
+  margin: 0 0 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px;
+  }
+}
+
+.catalog-card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.catalog-card__button {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+
+  &::before {
+    display: block;
+    width: 20px;
+    height: 16px;
+    background-image: url("../../images/icons/stack.svg#catalog-union");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+  }
+}
