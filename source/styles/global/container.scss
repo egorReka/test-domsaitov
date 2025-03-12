@@ -1,14 +1,16 @@
 @use "../bootstrap.scss" as *;
 
 .container {
-  width: 280px;
+  width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
+  padding: 0 70px;
 
-  @media (min-width: $tablet-width) {
-    width: 728px;
+  @include vp-1279 {
+    padding: 0 40px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 1360px;
+  @include vp-767 {
+    padding: 0 25px;
   }
 }

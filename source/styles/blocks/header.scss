@@ -1,0 +1,81 @@
+.header {
+  background-color: $color-night-rider;
+  border-radius: 0 0 40px 40px;
+
+  @include vp-1023 {
+    position: relative;
+    border-radius: 0 0 30px 30px;
+  }
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 17px;
+  padding: 6px 0;
+
+  @include vp-1279 {
+    gap: 15px 10px;
+  }
+
+  @include vp-1023 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header__container {
+  @include vp-1023 {
+    position: absolute;
+    top: calc(100% - 30px);
+    left: 0;
+    display: grid;
+    grid-template-rows: 0fr;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 40px;
+    background-color: $color-night-rider;
+    border-radius: 0 0 30px 30px;
+    transition: grid-template-rows $trans-default;
+  }
+
+  @include vp-767 {
+    padding: 0 25px;
+  }
+}
+
+.header__collapse-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 17px;
+  max-width: 1223px;
+
+  @include vp-1023 {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    min-height: 0;
+    overflow: hidden;
+  }
+}
+
+.header__logo {
+  @include vp-1023 {
+    z-index: 2;
+  }
+}
+
+.header__nav {
+  @include vp-1023 {
+    margin-top: 60px;
+  }
+}
+
+.header__social {
+  @include vp-1023 {
+    margin-bottom: 60px;
+  }
+}
