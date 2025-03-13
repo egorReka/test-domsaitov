@@ -1,3 +1,7 @@
+/* VENDOR */
+@import "../vendor/swiper.min.css";
+@import "../vendor/pagination.min.css";
+
 /* GLOBAL */
 
 @import "bootstrap.scss";
@@ -28,3 +32,7 @@
 @import "./blocks/reviews-video.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/banner.scss";
+@import "./blocks/steps.scss";
+@import "./blocks/steps-card.scss";
+@import "./blocks/swiper-step.scss";
+@import "./blocks/video.scss";

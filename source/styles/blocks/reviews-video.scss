@@ -1,41 +1,6 @@
 .reviews-video__link {
-  display: grid;
-  place-content: center;
-
   width: 580px;
   height: 320px;
-  border-radius: 40px;
-  background-color: $color-night-rider;
-}
-
-.reviews-video__play-button {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
-  display: grid;
-  place-content: center;
-  width: 70px;
-  height: 70px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  mask-image: url("../../images/icons/stack.svg#play");
-  mask-repeat: no-repeat;
-  mask-size: 53px;
-  mask-position: center;
-  background-image: $stars-to-buttom;
-  cursor: pointer;
-  transition: transform $trans-default, opacity $trans-default;
-  transform: translateX(8px);
-
-  &:focus,
-  &:hover {
-    transform: translateX(8px) scale(1.15);
-  }
-
-  &:active {
-    transform: translateX(8px) scale(1.1);
-    opacity: 0.7;
-  }
 }
 
 .reviews-video__title {

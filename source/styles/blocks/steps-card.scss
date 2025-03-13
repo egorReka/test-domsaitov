@@ -1,0 +1,133 @@
+.steps-card {
+  display: grid;
+  grid-template-columns: minmax(auto, 659px) minmax(auto, 730px);
+  justify-content: center;
+  column-gap: 91px;
+  height: 100%;
+  padding: 80px 150px 170px;
+  border-radius: 40px;
+  background-color: $color-white-smoke;
+}
+
+.steps-card__header {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 2;
+  margin: 0 0 60px;
+  text-align: center;
+  font-family: $ff-montserrat;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 108%;
+  color: $color-night-rider;
+}
+
+.steps-card__wrapper {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.steps-card__count {
+  display: flex;
+  column-gap: 40px;
+
+  &::after {
+    display: block;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+  }
+
+  &--man::after {
+    background-image:
+      url("../../images/man@1x.png");
+    background-image:
+      -webkit-image-set(url("../../images/man@2x.png") 2x, url("../../images/man@1x.png") 1x);
+    background-image:
+      image-set(url("../../images/man@2x.webp") type("image/webp") 2x,
+        url("../../images/man@1x.webp") type("image/webp") 1x,
+        url("../../images/man@2x.png") 2x,
+        url("../../images/man@1x.png") 1x);
+  }
+
+  &--check::after {
+    background-image:
+      url("../../images/check@1x.png");
+    background-image:
+      -webkit-image-set(url("../../images/check@2x.png") 2x, url("../../images/check@1x.png") 1x);
+    background-image:
+      image-set(url("../../images/check@2x.webp") type("image/webp") 2x,
+        url("../../images/check@1x.webp") type("image/webp") 1x,
+        url("../../images/check@2x.png") 2x,
+        url("../../images/check@1x.png") 1x);
+  }
+
+  &--money::after {
+    background-image:
+      url("../../images/money@1x.png");
+    background-image:
+      -webkit-image-set(url("../../images/money@2x.png") 2x, url("../../images/money@1x.png") 1x);
+    background-image:
+      image-set(url("../../images/money@2x.webp") type("image/webp") 2x,
+        url("../../images/money@1x.webp") type("image/webp") 1x,
+        url("../../images/money@2x.png") 2x,
+        url("../../images/money@1x.png") 1x);
+  }
+
+  &--locked::after {
+    background-image:
+      url("../../images/locked@1x.png");
+    background-image:
+      -webkit-image-set(url("../../images/locked@2x.png") 2x, url("../../images/locked@1x.png") 1x);
+    background-image:
+      image-set(url("../../images/locked@2x.webp") type("image/webp") 2x,
+        url("../../images/locked@1x.webp") type("image/webp") 1x,
+        url("../../images/locked@2x.png") 2x,
+        url("../../images/locked@1x.png") 1x);
+  }
+
+  &--struck::after {
+    background-image:
+      url("../../images/struck@1x.png");
+    background-image:
+      -webkit-image-set(url("../../images/struck@2x.png") 2x, url("../../images/struck@1x.png") 1x);
+    background-image:
+      image-set(url("../../images/struck@2x.webp") type("image/webp") 2x,
+        url("../../images/struck@1x.webp") type("image/webp") 1x,
+        url("../../images/struck@2x.png") 2x,
+        url("../../images/struck@1x.png") 1x);
+  }
+}
+
+.steps-card__description {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  margin-top: 26px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: $color-night-rider;
+}
+
+.steps-card__title {
+  margin: 31px 0 0;
+  font-family: $ff-montserrat;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 108%;
+  color: $color-night-rider;
+}
+
+.steps-card__list {
+  padding-left: 35px;
+}
+
+.steps-card__item {
+  margin: 0 0 20px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
