@@ -55,6 +55,7 @@
     width: 60px;
     height: 60px;
     mask-image: url("../../images/icons/stack.svg#star");
+    mask-repeat: no-repeat;
     background-image: $stars-to-right;
     content: "";
   }

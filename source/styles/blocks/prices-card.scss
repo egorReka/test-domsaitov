@@ -1,0 +1,109 @@
+.prices-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px;
+  color: $color-night-rider;
+  background-color: $color-white-smoke;
+  border-radius: 30px;
+
+  &--dark {
+    background-color: $color-night-rider;
+    color: $color-default-white;
+
+    & .prices-card__label::after {
+      background-color: $color-default-white;
+    }
+
+    & .prices-card__item::before {
+      background-color: $color-default-white;
+    }
+  }
+}
+
+.prices-card__label {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+
+  &::after {
+    display: block;
+    width: 56px;
+    height: 56px;
+    mask-image: url("../../images/icons/stack.svg#star");
+    mask-repeat: no-repeat;
+    background-color: $color-night-rider;
+    transform: rotate(15deg);
+    content: "";
+  }
+}
+
+.prices-card__label span {
+  display: block;
+  padding: 10px 20px;
+  font-size: 32px;
+  line-height: 116%;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.prices-card__title {
+  margin: 14px 0 13px;
+  font-family: $ff-montserrat;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 117%;
+}
+
+.prices-card__title-accent {
+  background-image: $stars-to-right;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prices-card__text {
+  max-width: 430px;
+  margin: 8px 0;
+  line-height: 120%;
+  color: $color-default-gray;
+
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.prices-card__list {
+  display: grid;
+  row-gap: 21px;
+  list-style: none;
+  margin: 0 0 37px;
+  padding: 0;
+}
+
+.prices-card__item {
+  display: flex;
+  column-gap: 13px;
+  line-height: 120%;
+
+  &--price {
+    font-weight: 700;
+  }
+
+  &::before {
+    display: block;
+    min-width: 28px;
+    height: 20px;
+    margin: 3px 0;
+    mask-image: url("../../images/icons/stack.svg#check");
+    mask-repeat: no-repeat;
+    background-color: $color-night-rider;
+    content: "";
+  }
+}
+
+.prices-card__button {
+  margin-top: auto;
+}
