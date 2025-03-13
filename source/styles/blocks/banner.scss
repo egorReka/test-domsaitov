@@ -1,0 +1,44 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  column-gap: 97px;
+  padding: 60px;
+  border-radius: 40px;
+  background-color: $color-night-rider;
+}
+
+.banner__wrapper {
+  max-width: 760px;
+}
+
+.banner__title {
+  margin: 42px 0 40px;
+  font-family: $ff-montserrat;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 108%;
+  color: $color-default-white;
+}
+
+.banner__img {
+  position: relative;
+  max-width: 683px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    mask-image: url("../../images/icons/stack.svg#star");
+    mask-repeat: no-repeat;
+    background-image: $stars-to-right;
+    left: 10%;
+    bottom: 1%;
+    transform: translateX(-50%) rotate(-15deg);
+    width: 88px;
+    height: 88px;
+    content: "";
+  }
+}
+
+.banner__img img {
+  width: 683px;
+}
