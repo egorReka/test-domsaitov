@@ -1,0 +1,40 @@
+.advantages-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: $color-white-smoke;
+  border-radius: 30px;
+  overflow: clip;
+}
+
+.advantages-card__content {
+  padding: 60px 10px 60px 40px;
+}
+
+.advantages-card__title {
+  display: flex;
+  column-gap: 30px;
+  margin: 0 0 22px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 120%;
+  color: $color-night-rider;
+
+  &::after {
+    display: block;
+    width: 44px;
+    height: 44px;
+    mask-image: url("../../images/icons/stack.svg#star");
+    background-image: $stars-to-right;
+    transform: rotate(15deg);
+    content: "";
+  }
+}
+
+.advantages-card__text {
+  margin: 15px 0;
+  line-height: 120%;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}

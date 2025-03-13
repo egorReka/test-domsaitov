@@ -1,0 +1,12 @@
+.title {
+  font-family: $ff-montserrat;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 108%;
+  text-align: center;
+  color: $color-safety-orange;
+
+  &::first-line {
+    color: $color-night-rider;
+  }
+}
