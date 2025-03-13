@@ -1,6 +1,7 @@
 .header {
   background-color: $color-night-rider;
   border-radius: 0 0 40px 40px;
+  z-index: 1;
 
   @include vp-1023 {
     position: relative;
@@ -9,10 +10,13 @@
 }
 
 .header__wrapper {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 17px;
+  display: flex;
+  gap: 108px;
   padding: 6px 0;
+
+  @media (max-width: 1580px) {
+    gap: 17px;
+  }
 
   @include vp-1279 {
     gap: 15px 10px;
@@ -26,6 +30,8 @@
 }
 
 .header__container {
+  width: 100%;
+
   @include vp-1023 {
     position: absolute;
     top: calc(100% - 30px);
@@ -47,11 +53,8 @@
 
 .header__collapse-wrapper {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
   gap: 17px;
-  max-width: 1223px;
 
   @include vp-1023 {
     display: grid;
@@ -68,7 +71,15 @@
   }
 }
 
+.header__logo img {
+  display: block;
+  min-width: 251px;
+  height: 70px;
+}
+
 .header__nav {
+  margin: 0 auto;
+
   @include vp-1023 {
     margin-top: 60px;
   }

@@ -9,15 +9,30 @@ $color-default-white: #ffffff;
 $color-default-gray: #808080;
 
 
+// :root {
+//   --light-grey: #f6f6f6;
+//   --orange-juice: #f60;
+//   --white: #fff;
+//   --dark-grey: #2d2d2d;
+//   --grey: #808080;
+//   --blueberry: #8a38d6;
+//   --grey2: #c0c0c0;
+// }
+
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-night-rider: #2d2d2d;
 $color-silver: #c0c0c0;
+$color-white-smoke: #f6f6f6;
+$color-safety-orange: #ff6600;
+$color-safety-orange-70: rgba($color-safety-orange, 0.7);
+$color-eclipse: #3f3f3f;
 
 // Gradient
 
 $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$stars-to-right: linear-gradient(90deg, #f60 0%, #f26659 27.4%, #f06177 37.4%, #e55d97 48.4%, #ca46d2 71.4%, #8d13f9 100%);
 
 // Typography
 // ---------------------------------

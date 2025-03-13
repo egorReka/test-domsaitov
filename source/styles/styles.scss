@@ -8,8 +8,10 @@
 @import "global/container";
 
 /* BLOCKS */
-@import "./blocks/logo.scss";
+@import "./blocks/ui/button.scss";
+@import "./blocks/page.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/social.scss";
 @import "./blocks/header.scss";
 @import "./blocks/burger.scss";
+@import "./blocks/hero.scss";

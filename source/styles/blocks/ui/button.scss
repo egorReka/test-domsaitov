@@ -1,73 +1,33 @@
 @use "../../bootstrap.scss" as *;
 
 .button {
-  @include reset-button;
-  border-radius: 4px;
-  padding: 8px 20px;
-  background-color: var(--base-primary);
-  color: var(--base-white);
+  display: grid;
+  place-content: center;
+  width: 100%;
+  padding: 21px;
   font-family: inherit;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 124%;
+  text-transform: uppercase;
+  align-items: center;
+  color: $color-default-white;
+  background-color: $color-safety-orange;
+  border-radius: 20px;
+  border: none;
+  transition: background-color $trans-default;
 
   &:hover,
   &:focus {
-    background-color: var(--alt-primary-lighter);
+    background-color: $color-safety-orange-70;
   }
 
   &:active {
-    background-color: var(--alt-primary-darker);
+    background-color: $color-night-rider;
   }
 
   &:disabled {
-    background-color: var(--base-grey);
+    background-color: $color-silver;
     cursor: default;
-  }
-
-  &--primary {
-    min-width: 141px;
-    font-size: 14px;
-    line-height: 143%;
-  }
-
-  &--secondary {
-    min-width: 137px;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-  }
-
-  &--slider {
-    min-width: 113px;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-  }
-
-  &--additional {
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-  }
-
-  &--reset {
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--base-primary);
-    background-color: var(--base-white);
-
-    &:hover,
-    &:focus {
-      color: var(--base-white);
-    }
-
-    &:active {
-      color: var(--base-white);
-    }
-
-    &:disabled {
-      background-color: var(--alt-light-grey);
-      color: var(--base-white);
-      cursor: default;
-    }
   }
 }
