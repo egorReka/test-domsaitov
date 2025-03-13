@@ -1,0 +1,56 @@
+.additional-card {
+  padding: 40px;
+  border-radius: 40px;
+  background-color: $color-white-smoke;
+}
+
+.additional-card__content {
+  display: grid;
+  grid-template-columns: minmax(auto, 530px) auto;
+
+  &::before {
+    align-self: flex-start;
+    justify-self: flex-end;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    display: block;
+    min-width: 48px;
+    height: 48px;
+    mask-image: url("../../images/icons/stack.svg#star");
+    mask-repeat: no-repeat;
+    background-image: $stars-to-right;
+    transform: rotate(-12deg);
+    content: "";
+  }
+}
+
+.additional-card__title {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  margin: 0 0 20px;
+  font-family: $ff-montserrat;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 117%;
+  color: $color-night-rider;
+}
+
+.additional-card__price {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin: 0 0 31px;
+}
+
+.additional-card__price-accent {
+  font-family: $ff-montserrat;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  background-image: $stars-to-right;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
