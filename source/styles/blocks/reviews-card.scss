@@ -1,0 +1,59 @@
+.reviews-card {
+  height: 100%;
+  padding: 40px;
+  background-color: $color-white-smoke;
+  border-radius: 30px;
+}
+
+.reviews-card__rating {
+  display: grid;
+  column-gap: 22px;
+  margin: 0 0 22px;
+  font-family: $ff-montserrat;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 144%;
+  color: $color-night-rider;
+
+  &::after {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    display: block;
+    width: 275px;
+    height: 49px;
+    background-image: url("../../images/icons/stack.svg#star-raiting");
+    background-repeat: repeat-x;
+    background-size: 55px 49px;
+    background-position: left;
+    content: "";
+  }
+
+  & > .star {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    display: block;
+    width: 275px;
+    height: 49px;
+    mask-image: url("../../images/icons/stack.svg#star-raiting");
+    mask-repeat: repeat-x;
+    mask-size: 55px 49px;
+    mask-position: left;
+    background-image: $stars-to-right;
+    background-repeat: repeat-x;
+    background-size: 55px 49px;
+    background-position: left;
+  }
+}
+
+.reviews-card__text {
+  margin: 20px 0;
+  line-height: 120%;
+  color: $color-night-rider;
+}
+
+.reviews-card__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
