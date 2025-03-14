@@ -4,6 +4,10 @@
   gap: 22px;
   padding-top: 2px;
   margin-bottom: 131px;
+
+  @include vp-1439 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .promo__img {
@@ -35,6 +39,16 @@
     transform: translateX(50%) rotate(-164deg);
     width: 57px;
     height: 57px;
+  }
+
+  @include vp-1439 {
+    margin: 0 auto;
+  }
+}
+
+.promo__content {
+  @include vp-1439 {
+    margin: 0 auto;
   }
 }
 
@@ -71,6 +85,11 @@
   width: max-content;
   text-align: start;
   line-height: 108%;
+
+  @include vp-1439 {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .promo__text {
@@ -81,5 +100,9 @@
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  @include vp-1439 {
+    text-align: center;
   }
 }

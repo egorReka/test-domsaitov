@@ -14,6 +14,7 @@
 .clients__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(auto, 430px));
+  justify-content: center;
   gap: 20px;
   margin: 0;
   padding: 0;
