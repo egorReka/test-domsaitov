@@ -25,7 +25,7 @@
 
 .prices__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 580px));
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
   justify-content: center;
 
   gap: 20px;

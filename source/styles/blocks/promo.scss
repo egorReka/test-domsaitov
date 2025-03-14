@@ -7,6 +7,15 @@
 
   @include vp-1439 {
     grid-template-columns: 1fr;
+    margin-bottom: 120px;
+  }
+
+  @include vp-1279 {
+    margin-bottom: 100px;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 80px;
   }
 }
 
@@ -78,6 +87,10 @@
     background-repeat: no-repeat;
     content: "";
   }
+
+  @include vp-1439 {
+    justify-content: center;
+  }
 }
 
 .promo__title {
@@ -87,7 +100,6 @@
   line-height: 108%;
 
   @include vp-1439 {
-    margin: 0 auto;
     text-align: center;
   }
 }

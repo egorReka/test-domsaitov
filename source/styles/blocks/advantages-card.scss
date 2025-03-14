@@ -4,6 +4,7 @@
   background-color: $color-white-smoke;
   border-radius: 30px;
   overflow: clip;
+  height: 100%;
 
   @include vp-767 {
     grid-template-columns: 1fr;
@@ -53,6 +54,8 @@
 }
 
 .advantages-card__img {
+  align-self: flex-end;
+
   @include vp-767 {
     justify-self: flex-end;
   }
