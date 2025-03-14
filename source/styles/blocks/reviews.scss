@@ -30,13 +30,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(574px, 1fr));
   justify-content: center;
-  justify-items: center;
   gap: 20px;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.reviews__video-item {
-  max-width: 580px;
 }

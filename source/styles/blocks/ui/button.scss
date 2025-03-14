@@ -30,4 +30,8 @@
     background-color: $color-silver;
     cursor: default;
   }
+
+  @include vp-767 {
+    font-size: 22px;
+  }
 }

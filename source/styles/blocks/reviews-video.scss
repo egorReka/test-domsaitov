@@ -1,6 +1,10 @@
 .reviews-video__link {
-  width: 580px;
-  height: 320px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  aspect-ratio: 580 / 320;
 }
 
 .reviews-video__title {
