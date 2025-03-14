@@ -7,6 +7,15 @@
   padding: 80px 150px 170px;
   border-radius: 40px;
   background-color: $color-white-smoke;
+
+  @include vp-1279 {
+    padding: 60px 100px 120px;
+    column-gap: 60px;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .steps-card__header {
@@ -19,11 +28,26 @@
   font-size: 48px;
   line-height: 108%;
   color: $color-night-rider;
+
+  @include vp-1279 {
+    font-size: 44px;
+  }
+
+  @include vp-1023 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    font-size: 40px;
+  }
 }
 
 .steps-card__wrapper {
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
+
+  @include vp-1023 {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
 }
 
 .steps-card__count {
@@ -109,6 +133,11 @@
   font-size: 24px;
   line-height: 120%;
   color: $color-night-rider;
+
+  @include vp-1023 {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+  }
 }
 
 .steps-card__title {
@@ -118,6 +147,14 @@
   font-size: 48px;
   line-height: 108%;
   color: $color-night-rider;
+
+  @include vp-1279 {
+    font-size: 44px;
+  }
+
+  @include vp-1023 {
+    font-size: 40px;
+  }
 }
 
 .steps-card__list {

@@ -72,6 +72,14 @@
     background-repeat: no-repeat;
     content: "";
   }
+
+  @include vp-1279 {
+    font-size: 44px;
+  }
+
+  @include vp-1023 {
+    font-size: 40px;
+  }
 }
 
 .steps__video-link {

@@ -29,6 +29,10 @@
     transform: rotate(15deg);
     content: "";
   }
+
+  @include vp-1023 {
+    font-size: 28px;
+  }
 }
 
 .advantages-card__text {

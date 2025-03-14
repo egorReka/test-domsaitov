@@ -17,6 +17,10 @@
   &:last-of-type {
     margin-bottom: 60px;
   }
+
+  @include vp-1023 {
+    font-size: 28px;
+  }
 }
 
 .prices__list {

@@ -9,4 +9,12 @@
   &::first-line {
     color: $color-night-rider;
   }
+
+  @include vp-1023 {
+    font-size: 44px;
+  }
+
+  @include vp-1023 {
+    font-size: 40px;
+  }
 }

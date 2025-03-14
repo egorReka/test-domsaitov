@@ -2,6 +2,10 @@
   padding: 100px 0 0;
   background-color: $color-white-smoke;
   border-radius: 0 0 30px 30px;
+
+  @include vp-1023 {
+    padding: 40px 0 0;
+  }
 }
 
 .hero__wrapper {
@@ -37,6 +41,10 @@
   &::first-line {
     color: $color-safety-orange;
   }
+
+  @include vp-1023 {
+    font-size: 64px;
+  }
 }
 
 .hero__text {
@@ -47,6 +55,10 @@
 
   &:last-of-type {
     margin-bottom: 40px;
+  }
+
+  @include vp-1023 {
+    font-size: 28px;
   }
 }
 
@@ -112,6 +124,12 @@
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
   }
+
+  @include vp-1023 {
+    overflow-x: visible;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
 }
 
 .hero__item {
@@ -124,4 +142,8 @@
   background-color: $color-default-white;
   border-radius: 30px 30px 0 0;
   text-align: center;
+
+  @include vp-1023 {
+    border-radius: 20px;
+  }
 }

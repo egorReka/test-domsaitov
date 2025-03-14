@@ -20,6 +20,10 @@
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 77px;
+
+  @include vp-1279 {
+    bottom: 52px;
+  }
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
