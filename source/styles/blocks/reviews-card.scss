@@ -7,6 +7,8 @@
 
 .reviews-card__rating {
   display: grid;
+  justify-content: flex-start;
+  align-items: center;
   column-gap: 22px;
   margin: 0 0 22px;
   font-family: $ff-montserrat;
@@ -15,33 +17,47 @@
   line-height: 144%;
   color: $color-night-rider;
 
-  &::after {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-    display: block;
-    width: 275px;
-    height: 49px;
-    background-image: url("../../images/icons/stack.svg#star-raiting");
-    background-repeat: repeat-x;
-    background-size: 55px 49px;
-    background-position: left;
-    content: "";
-  }
 
+  &::after,
   & > .star {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     display: block;
-    width: 275px;
+    max-width: 275px;
     height: 49px;
+    background-repeat: repeat-x;
+    background-size: 55px 49px;
+    background-position: left;
+  }
+
+  &::after {
+    width: 275px;
+    background-image: url("../../images/icons/stack.svg#star-raiting");
+    content: "";
+  }
+
+  & > .star {
     mask-image: url("../../images/icons/stack.svg#star-raiting");
     mask-repeat: repeat-x;
     mask-size: 55px 49px;
     mask-position: left;
     background-image: $stars-to-right;
-    background-repeat: repeat-x;
-    background-size: 55px 49px;
-    background-position: left;
+  }
+
+  @include vp-767 {
+    column-gap: 12px;
+    font-size: 32px;
+
+    &::after,
+    & > .star {
+      max-width: 225px;
+      height: 39px;
+      background-size: 45px 39px;
+    }
+
+    & > .star {
+      mask-size: 45px 39px;
+    }
   }
 }
 
