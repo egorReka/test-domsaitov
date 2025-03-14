@@ -1,5 +1,17 @@
 .page__hero {
   margin: -40px 0 126px;
+
+  @include vp-1279 {
+    margin-bottom: 100px;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 60px;
+  }
 }
 
 .page__advantages {
@@ -11,6 +23,10 @@
 
   @include vp-1023 {
     margin-bottom: 80px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 60px;
   }
 }
 
@@ -24,6 +40,10 @@
   @include vp-1023 {
     margin-bottom: 80px;
   }
+
+  @include vp-767 {
+    margin-bottom: 60px;
+  }
 }
 
 .page__clients {
@@ -35,6 +55,10 @@
 
   @include vp-1023 {
     margin-bottom: 80px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 60px;
   }
 }
 
@@ -48,6 +72,10 @@
   @include vp-1023 {
     margin-bottom: 80px;
   }
+
+  @include vp-767 {
+    margin-bottom: 60px;
+  }
 }
 
 .page__promo {
@@ -59,5 +87,9 @@
 
   @include vp-1023 {
     margin-bottom: 80px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 60px;
   }
 }
