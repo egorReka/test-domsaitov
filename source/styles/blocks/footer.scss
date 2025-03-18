@@ -1,15 +1,24 @@
 .footer {
-  margin-top: 120px;
   padding: 80px 40px;
   border-radius: 40px 40px 0 0;
   background-color: $color-night-rider;
   font-size: 32px;
   text-align: center;
   color: $color-default-white;
+
+  @include vp-1023 {
+    font-size: 28px;
+  }
+
+  @include vp-767 {
+    padding: 40px 0;
+    font-size: 24px;
+  }
 }
 
 .footer__text {
   margin: 20px 0;
+  line-height: 120%;
 
   &:first-of-type {
     margin-top: 0;
@@ -54,5 +63,10 @@
 
   &:active {
     color: $color-safety-orange;
+  }
+
+  @include vp-767 {
+    padding: 5px;
+    font-size: 16px;
   }
 }
